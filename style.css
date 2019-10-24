@@ -83,7 +83,7 @@ body {
     font-size: 55px;
     line-height: 68px;
     background: linear-gradient(to right, #D1349F 0%, #0900E2 100%);
-    background:     -ms-linear-gradient(top, rgba(255,255,255,1) 100%, rgba(255,255,255,0) 100%);
+    background:     -ms-linear-gradient(top, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
 	-webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin:12px 0 19px;
