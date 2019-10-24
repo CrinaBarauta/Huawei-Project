@@ -1,0 +1,318 @@
+/* General Style -- s */
+body {
+    min-width: 310px;
+    font: normal 16px/1.5 'Guardian TextSans Cy', 'Guardian TextSans', Tahoma, sans-serif;
+    color: #232323;
+    margin: 0;
+    padding: 0
+}
+
+.container {
+    display: -webkit-flex;
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1230px!important;
+}
+
+.align-center{
+    text-align: center;
+}
+
+*,
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#main__wrapper {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+#main {
+    flex-direction: column;
+    display: -webkit-flex;
+    display: flex;
+    position: relative;
+    z-index: 10;
+}
+
+/* General Style -- e */
+
+/* Header -- s */
+
+.logo-block {
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+}
+
+
+#header {
+    box-sizing: border-box;
+    padding: 0 15px 0;
+    background: #fff url("banner_chipset.svg") no-repeat 100% bottom;
+    background-size: 900px;
+}
+
+#header .container__header {
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 740px;
+    padding: 5% 20px 15% !important;
+}
+
+#header .container__header--left {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.header__h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 68px;
+    background: linear-gradient(to right, #D1349F 0%, #0900E2 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    margin:12px 0 19px;
+}
+
+.header__h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 17px 0 90px;
+}
+
+@media screen and (max-width:1550px) {
+   .header__h3 {
+       width: 600px;
+   }
+}
+
+@media screen and (max-width:1370px) {
+    .header__h3 {
+        width: 550px;
+    }
+ }
+
+ @media screen and (max-width:1250px) {
+    #header {
+        background-size: 750px;
+    }
+    #header .container__header {
+        padding: 5% 20px !important;
+    }
+ }  
+ 
+@media screen and (max-width:1373px) {
+    #header .container__header {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #header{
+        background: #fff url("banner_chipset.svg") no-repeat 110% bottom;
+        background-size: 700px;
+    }
+    .header__h3 {
+        width: 500px;
+    }
+    
+    #header .container__header {
+        padding: 5% 20px !important;
+    }
+}
+@media screen and (max-width:1020px){
+    #header {
+        background-size: 650px;
+    }
+    .header__h1 {
+        font-size: 50px;
+    }
+    .header__h3 {
+        width: 450px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+@media screen and (max-width:945px) {
+    .logo-center {
+        margin: 0 auto;
+    }
+    #header .container {
+        padding-top: 25px;
+        display: block
+    }
+    #header .container__header {
+        display: -webkit-flex;
+        display: flex;
+        flex-flow: column wrap;
+        padding: 20px 15px 30px!important;
+        width: 100%;
+    }
+    #header .container__header--left {
+        align-self: center;
+    }
+    .header__h1 {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 55px;
+    }
+    .header__h3 {
+        text-align: center;
+        width: 100%;
+        padding: 20px 150px 430px;
+    }
+    .logo-block {
+        justify-content: center;
+        padding-left: 0;
+    } 
+
+    #header {
+        background: #fff url("banner_chipset.svg") no-repeat 50% 70%;
+        background-size: 700px;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .header__h3 {
+        padding: 20px 100px 430px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .header__h3 {
+        padding: 10px 50px 430px;
+    }
+    .header__h1{
+        font-size: 45px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width:560px) {
+    .img {
+        width: 300px;
+        height: auto;
+    }
+    .header__h3 {
+        padding: 0 0 430px;
+    }
+    .header__h1{
+        font-size: 35px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+    #header {
+        background: #fff url(banner_chipset.svg) no-repeat 50% 60%;
+    background-size: 600px;
+    }
+}
+@media screen and (max-width:460px) {
+    #header .container__header {
+        padding: 20px 0 30px!important;
+    }
+    .header__h3 {
+        min-width: 250px;
+    line-height: 23px;
+    font-size: 16px;
+    padding: 0 0 350px;
+    }
+    #header {
+        background-size: 500px;
+    }
+    .img {
+        width: 250px;
+    }
+
+}
+
+/* Header -- e */
+
+/* Animation -- s */
+
+      .animated {
+        -webkit-animation-duration: 3s;
+        animation-duration: 3s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-delay: .0s;
+        animation-delay: .0s;
+    }
+
+      .fadeInUp {
+        -webkit-animation-name: fadeInUp;
+        animation-name: fadeInUp;
+    }
+
+
+      @-webkit-keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 30%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            -webkit-transform: translate3d(0, 100%, 0);
+            transform: translate3d(0, 30%, 0);
+        }
+        to {
+            opacity: 1;
+            -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+    .animated__header {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+        -webkit-animation-delay: .0s;
+        animation-delay: .0s;
+    }
+
+      .fadeIn {
+        -webkit-animation-name: fadeIn;
+        animation-name: fadeIn;
+    }
+
+
+      @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /* Animation -- e */
+    
