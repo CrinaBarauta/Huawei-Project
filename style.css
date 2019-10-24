@@ -31,6 +31,9 @@ body {
     display: -webkit-flex;
     display: flex;
     flex-direction: column;
+    max-width: 1920px;
+    margin-right: auto;
+    margin-left: auto;
 }
 #main {
     flex-direction: column;
@@ -90,7 +93,7 @@ body {
     font-weight: normal;
     font-size: 20px;
     line-height: 30px;
-    padding: 17px 0 90px;
+    padding: 17px 0 60px;
 }
 
 @media screen and (max-width:1550px) {
